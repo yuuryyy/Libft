@@ -6,7 +6,7 @@
 /*   By: ychagri <ychagri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 16:19:23 by ychagri           #+#    #+#             */
-/*   Updated: 2023/11/05 19:20:55 by ychagri          ###   ########.fr       */
+/*   Updated: 2023/11/10 17:45:59 by ychagri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (0);
 	if (start >= ft_strlen((char *)s))
 		return (ft_strdup(""));
-	if (len > ft_strlen((char *)s) + start)
+	if (len > ft_strlen(((char *)s) + start))
 		len = ft_strlen((char *)s) - start;
 	sub = (char *) malloc (len * sizeof(char) + 1);
 	if (!sub)

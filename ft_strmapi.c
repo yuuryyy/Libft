@@ -6,7 +6,7 @@
 /*   By: ychagri <ychagri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 17:30:02 by ychagri           #+#    #+#             */
-/*   Updated: 2023/11/08 16:06:59 by ychagri          ###   ########.fr       */
+/*   Updated: 2023/11/11 20:28:06 by ychagri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 //	c = c + i;
 //	return	(c);
 //}
-
 //int main()
 //{
 //	printf("%s\n", ft_strmapi("abcd0 ", testt));

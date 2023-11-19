@@ -6,7 +6,7 @@
 #    By: ychagri <ychagri@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/03 01:10:21 by ychagri           #+#    #+#              #
-#    Updated: 2023/11/08 22:44:44 by ychagri          ###   ########.fr        #
+#    Updated: 2023/11/11 02:26:36 by ychagri          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ $(NAME): $(OBJS)
 	$(ARC) $(NAME) $(OBJS)
 
 %.o : %.c	$(LIBRARY)
-	$(CC) $(CFLAGS) -o $@ -c $<
+	$(CC) $(CFLAGS) -c $<
 
 clean:
 	rm -f $(OBJS) $(OBJS_BONUS)
@@ -49,7 +49,8 @@ bonus : $(OBJS_BONUS)
 		$(ARC) $(NAME) $(OBJS_BONUS)
 
 fclean: clean
-
 	rm -f $(NAME)
 
 re : fclean all bonus
+
+.PHONY: clean all re bonus fclean
